@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Papyrus", sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 36px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90.41deg, #f39806 1.14%, #58d307 100%);
+    color: white;
+    padding: 22px;
+}
+
+.header--image {
+    height: 100%;
+    margin-right: 6px}
+
+.header--title {
+    font-size: 1.25rem;
+    margin-right: auto;
+    color: black
+}
+
+.header--project {
+    font-size: 1rem;
+    font-weight: 1000;
+    color: black
+}
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+    margin-bottom: 17px;
+}
+
+.form--input {
+    font-family: "Papyrus", sans-serif;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-indent: 5px;
+}
+
+.form--button {
+    grid-column: 1 / -1;
+    font-family: "Papyrus", sans-serif;
+    border-radius: 10px;
+    background: linear-gradient(90.41deg, #f39806 1.14%, #58d307 100%);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.meme {
+    position: relative;
+}
+
+.meme--image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: all 100ms ease-in-out;
+}
+
+.meme--image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+      0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+  
+  }
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: papyrus, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+
+:root {
+  --clr-accent: orange;
+  --ff-main: "Inter", sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --clr-text-main: black;
+    --clr-text-light: black;
+
+    --clr-background-light: #ffffff;
+  }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-text-main: white;
+    --clr-text-light: white;
+
+    --clr-background-light: black;
+  }
+}
